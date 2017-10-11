@@ -6,7 +6,7 @@
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 04:27:15 by abrichar          #+#    #+#             */
-/*   Updated: 2017/10/11 17:25:37 by abrichar         ###   ########.fr       */
+/*   Updated: 2017/10/11 18:09:46 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,4 +105,8 @@ short				ft_countnbr(long nbr);
 short				ft_countunbr(unsigned long nbr);
 void				ft_putzerox(char letter);
 char				*ft_itoabaseu(unsigned long nbr, int base, char min);
+void				ft_putnbrwp(long nbr, int precision);
+void				ft_putstrwp(char *str, int precision);
+void				ft_putunbrwp(unsigned long nbr, int precision);
+void				ft_putunbr(unsigned long n);
 #endif
