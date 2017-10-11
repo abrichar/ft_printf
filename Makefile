@@ -6,7 +6,7 @@
 #    By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 07:22:10 by abrichar          #+#    #+#              #
-#    Updated: 2017/10/11 16:55:10 by abrichar         ###   ########.fr        #
+#    Updated: 2017/10/11 17:06:31 by abrichar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	cd libft; $(MAKE) -f Makefile
-	ar rcs $(NAME) $^
+	ar rcs $(NAME) $^ $(LIBFT)
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c
 	@mkdir $(OBJ_PATH) 2> /dev/null || true
